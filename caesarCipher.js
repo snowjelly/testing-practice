@@ -22,8 +22,9 @@ function caesarCipher(str, shift) {
     }
   }
 
+  const punctuationAndSpacesRegex = /[^\w]/g;
   for (let i = 0; i < str.length; i += 1) {
-    if (str.charAt(i) === " ") {
+    if (str.charAt(i).match(punctuationAndSpacesRegex)) {
       strCrypt += str.charAt(i);
       continue;
     }

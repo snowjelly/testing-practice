@@ -11,3 +11,7 @@ test('string "zzz" becomes "bbb"', () => {
 test('string "Water Bottle" becomes "Aexiv Fsxxpi"', () => {
   expect(caesarCipher("Water Bottle", 4)).toBe("Aexiv Fsxxpi");
 });
+
+test('string "Bedman?" becomes "Fihqer?"', () => {
+  expect(caesarCipher("Bedman?", 4)).toBe("Fihqer?");
+});
