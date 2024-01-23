@@ -1,5 +1,3 @@
-function caesarCipher(str) {
-  return "tpm cbehvz";
-}
+function caesarCipher(str, shift) {}
 
 export default caesarCipher;
